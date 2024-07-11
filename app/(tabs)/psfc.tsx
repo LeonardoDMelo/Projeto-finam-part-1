@@ -1,5 +1,4 @@
 import { Image, StyleSheet } from "react-native";
-import { HelloWave } from "@/components/HelloWave";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
@@ -10,19 +9,28 @@ export default function TabThreeScreen() {
       headerBackgroundColor={{ light: "#D0D0D0", dark: "#353636" }}
       headerImage={
         <Image
-          source={require("@/assets/images/spfc.png")}
+          source={require("@/assets/images/iftmLogo.jpg")}
           style={styles.pscLogo}
         />
       }
-      backgroundColor="#2bacda"
+      backgroundColor="#000"
     >
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">PSFC</ThemedText>
-        <HelloWave />
+        <ThemedText type="title">Itinerário Formativo</ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Payssandu</ThemedText>
-        <ThemedText>O melhor time do Brasil.</ThemedText>
+        <ThemedText type="subtitle">Hotel</ThemedText>
+        <ThemedText>
+          Já trabalhei como assitente administrativo no hotel Dan Inn Uberaba,
+          Tive bastante contato com publico pois fazia reservas de quartos e
+          salões.
+        </ThemedText>
+        <ThemedText type="subtitle">CodeKids</ThemedText>
+        <ThemedText>
+          Tambem atuei em uma StartUp que vendia curso de robotica para
+          crianças, ensinando desde um regador automatico, até um carrinho que
+          segue uma faixa
+        </ThemedText>
       </ThemedView>
     </ParallaxScrollView>
   );

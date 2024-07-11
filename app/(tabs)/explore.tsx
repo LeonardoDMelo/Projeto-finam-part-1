@@ -12,53 +12,36 @@ export default function TabTwoScreen() {
     <ParallaxScrollView
       headerBackgroundColor={{ light: "#D0D0D0", dark: "#353636" }}
       headerImage={
-        <Ionicons size={310} name="code-slash" style={styles.headerImage} />
+        <Image
+          source={require("@/assets/images/projeto.png")}
+          style={styles.projetoLogo}
+        />
       }
     >
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Curso</ThemedText>
+        <ThemedText type="title">Projetos</ThemedText>
       </ThemedView>
-      <ThemedText>
-        Faço curso de analise e desenvolvimento de sistemas
-      </ThemedText>
-      <Collapsible title="Sobre as telas">
+      <ThemedText>Projetos mais relevantes que fiz</ThemedText>
+      <Collapsible title="Java">
         <ThemedText>
-          Esse app tem três telas:{" "}
-          <ThemedText type="defaultSemiBold">
-            Pode ver informações sobre minha pessoa
-          </ThemedText>{" "}
-          e{" "}
-          <ThemedText type="defaultSemiBold">
-            Sobre o melhor time do Brasil
-          </ThemedText>
-        </ThemedText>
-        <ThemedText>
-          E essa tela <ThemedText type="defaultSemiBold"></ThemedText>, onde
-          verá minhas proeficiencias
+          Projeto que faz uso de bastante orientação a objetos no qual aprendi
+          varios conteudos muito relevantes para meu proprio desenvolvimento:{" "}
         </ThemedText>
       </Collapsible>
-      <Collapsible title="Curso de desevolvimento de jogos">
+
+      <Collapsible title="TIAW">
         <ThemedText>
-          Start <ThemedText type="defaultSemiBold">GameDev</ThemedText> com o
-          professor Wenes Soares, onde aprendi a usar a engine{" "}
-          <ThemedText type="defaultSemiBold">Unity</ThemedText>, desenvolvendo
-          um jogo 2D.
+          Projeto usando tecnologias atuais como React Native e Expo Go, tambem
+          usamos a biblioteca GlueStack usada principalmente para UI:{" "}
         </ThemedText>
       </Collapsible>
-      <Collapsible title="Game Dev">
+
+      <Collapsible title="Extensão ll">
         <ThemedText>
-          Onde fiz o curso{" "}
-          <ThemedText type="defaultSemiBold">Start-GameDev</ThemedText> conteudo
-          trabalhado <ThemedText type="defaultSemiBold">Unity</ThemedText>{" "}
-          mecanicas de pesca, plantação, combate e rolamento
+          Projeto no qual tive que desenvolver um jogo em C, ultilizando uma
+          biblioteca chamada Raylib, e apesar da limitação imposta pela
+          linguagem, achei bastante interessante:{" "}
         </ThemedText>
-        {/* <Image
-          source={require("@/assets/images/react-logo.png")}
-          style={{ alignSelf: "center" }}
-        /> */}
-        <ExternalLink href="https://hotmart.com/pt-br/marketplace/produtos/start-gamedev/P56252308L">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
       </Collapsible>
     </ParallaxScrollView>
   );
@@ -72,9 +55,12 @@ const styles = StyleSheet.create({
     left: -35,
     position: "absolute",
   },
-  backgroundColor: "transparent",
-  titleContainer: {
-    flexDirection: "row",
-    gap: 8,
+
+  projetoLogo: {
+    height: 250,
+    width: 400,
+    bottom: 0,
+    left: 0,
+    position: "static",
   },
 });

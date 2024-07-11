@@ -12,23 +12,22 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: "#A1CEDC", dark: "#1D3D47" }}
       headerImage={
         <Image
-          source={require("@/assets/images/iftmLogo.jpg")}
+          source={require("@/assets/images/perfil.jpg")}
           style={styles.iftmLogo}
         />
       }
     >
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Bem-vindo!</ThemedText>
-        <HelloWave />
+        <ThemedText type="title">Olá meu nobre! </ThemedText>
       </ThemedView>
+
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Nome: Leonardo Melo</ThemedText>
+        <ThemedText type="subtitle">Meu nome: Leonardo Melo</ThemedText>
         <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">Estutande do IFTM</ThemedText>{" "}
+          <ThemedText type="defaultSemiBold">Estutande do IFTM</ThemedText>{" "}
           <ThemedText type="defaultSemiBold">
             {/* {Platform.select({ ios: "cmd + d", android: "cmd + m" })} */}
           </ThemedText>{" "}
-          to open developer tools.
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
@@ -41,7 +40,6 @@ export default function HomeScreen() {
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Obetivos: Sempre melhorar</ThemedText>
         <ThemedText>
-          When you're ready, run{" "}
           <ThemedText type="defaultSemiBold">
             {" "}
             Me tornar um eximio programador
@@ -75,7 +73,7 @@ const styles = StyleSheet.create({
   },
   iftmLogo: {
     height: 300,
-    width: 400,
+    width: 390,
     bottom: 0,
     left: 0,
     position: "static",

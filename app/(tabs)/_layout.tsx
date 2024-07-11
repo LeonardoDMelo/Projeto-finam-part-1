@@ -30,10 +30,10 @@ export default function TabLayout() {
       <Tabs.Screen
         name="psfc"
         options={{
-          title: "PAYSANDU",
+          title: "Itinerario",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
-              name={focused ? "football" : "football-outline"}
+              name={focused ? "wallet" : "wallet-outline"}
               color={color}
             />
           ),
